@@ -1,3 +1,20 @@
 .App {
   text-align: center;
+  border: solid black;
+}
+
+.articleList {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  width: 80%;
+}
+
+.articleCard {
+  border-radius: 10%;
+  border: solid black;
+  margin: 15px;
+}
+
+.logo {
+  width: 100px;
 }

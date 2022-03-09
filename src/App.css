@@ -21,4 +21,6 @@
 
 .navBar {
   margin: 10px;
+  border: black;
+  border-radius: 15%;
 }

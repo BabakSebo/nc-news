@@ -17,3 +17,17 @@ export const fetchTopics = () => {
     return res.data.topics;
   });
 };
+
+export const fetchArticlesById = (article_id) => {
+  return articleApi.get(`/articles/${article_id}`).then((res) => {
+    return res.data.article;
+  });
+};
+
+export const patchArticlesById = (article_id, inc_votes) => {
+  return articleApi
+    .patch(`/articles/${article_id}`, { inc_votes })
+    .then((res) => {
+      return res.data.article;
+    });
+};

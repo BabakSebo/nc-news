@@ -4,7 +4,7 @@ import logo from "./n_logo.jpeg";
 
 export const Header = () => {
   return (
-    <div>
+    <div className="header">
       <Link to={"/"}>
         <img className="logo" src={logo} alt="letter N as the logo" />
       </Link>

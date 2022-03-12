@@ -8,14 +8,9 @@ const ArticleCard = ({ article }) => {
         <h2>{article.title}</h2>
       </Link>
       <h3>{article.author}</h3>
-      {/* <h3>{article.body}</h3> */}
       <h4>
-        votes:{article.votes}
-        -----
-        <Link to={`/article/${article.article_id}/comments`}>
-          comments:{article.comment_count}
-        </Link>
-        -----
+        comments:{article.comment_count}
+        <></>
         <Link to={`/topics/${article.topic}`}> {article.topic}</Link>
       </h4>
     </div>

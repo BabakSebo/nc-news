@@ -4,6 +4,7 @@ import ArticleList from "./components/ArticleList";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import NavBar from "./components/NavBar";
 import { ArticleSingle } from "./components/ArticleSingle";
+import CommentList from "./components/CommentList";
 
 function App() {
   return (
@@ -17,6 +18,10 @@ function App() {
           <Route path="/" element={<ArticleList />} />
           <Route path="/topics/:topic" element={<ArticleList />} />
           <Route path="/article/:article_id" element={<ArticleSingle />} />
+          <Route
+            path="/article/:article_id/comments"
+            element={<CommentList />}
+          />
         </Routes>
       </div>
     </BrowserRouter>
